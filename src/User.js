@@ -9,8 +9,8 @@ export default class Users extends Component {
         );
         return (
             <div>
-                <h4>Список логинов:</h4>
-                <h4>{listLogin}</h4>
+                <h6>Список логинов:</h6>
+                <p>{listLogin}</p>
             </div>
         )
     }
