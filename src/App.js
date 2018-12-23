@@ -10,7 +10,6 @@ class App extends Component {
     super(props);
     this.state = {
       value: '',
-      stateButton: false,
       loadingBar: false,
       items: null,
     };
@@ -59,7 +58,7 @@ class App extends Component {
             <Input type="text" placeholder='Введите ник' value={this.state.value} onChange={this.handleChange} maxLength="12"/> 
           </Col>
           <Col xs="4" sm="2">
-            <Button className="shadow none"disabled={!this.state.value} color="success" onClick={this.getUser} block>Поиск</Button>
+            <Button className="shadow none" disabled={!this.state.value || this.state.loadingBar} color="success" onClick={this.getUser} block>Поиск</Button>
           </Col>
         </Row>
         <Row >
