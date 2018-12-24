@@ -28,7 +28,7 @@ class App extends Component {
           loadingBar: false
       })
     })
-    .catch(err => alert(`Етить что то пошло не так. Попробуйте позже.`))
+    .catch(err => alert(`Етить что то пошло не так. Попробуйте позже. Минут через 5.`))
   }
 
   greeting = () => {
@@ -39,7 +39,7 @@ class App extends Component {
       return <Users listLogin={this.listLogin} items={this.state.items}/>;
     }
     else if (this.state.items.length === 0) {     
-        return `По вашему запросу ничего не найдено. Повторите запрос.`
+        return `По вашему запросу ничего не найдено. Измените запрос.`
     }
   }
   loadingBarFunc = () => {
@@ -52,12 +52,12 @@ class App extends Component {
 
   render() {  
     return (
-      <Container className="App" >
-        <Row className="input-button">
+      <Container className="App">
+        <Row className="input-and-button" >
           <Col xs="12" sm="10">
-            <Input type="text" placeholder='Введите ник' value={this.state.value} onChange={this.handleChange} maxLength="12"/> 
+            <Input className="nick-input" type="text" placeholder='Введите ник' value={this.state.value} onChange={this.handleChange} maxLength="12"/> 
           </Col>
-          <Col xs="4" sm="2">
+          <Col xs="4" sm="2" className="button-find">
             <Button className="shadow none" disabled={!this.state.value || this.state.loadingBar} color="success" onClick={this.getUser} block>Поиск</Button>
           </Col>
         </Row>
