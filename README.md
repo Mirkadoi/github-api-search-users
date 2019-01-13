@@ -1,18 +1,12 @@
-Этот проект был запущен с [Create React App](https://github.com/facebook/create-react-app).
-
+Приложение служит для поиска пользователя по нику на github.
 ## 
-
-Для запуска проекта, перейдите в установленную директорию, и введите в cmd :
-
+Команды для управления проектом:
 ### `npm i`
-
 Установить проект.<br>
-
 ### `npm start`
-
 Запускает проект в режиме разработчика.<br>
-Откройте [http://localhost:3000](http://localhost:3000) для просмотра в браузере .
-
+[http://localhost:3000](http://localhost:3000) для просмотра в браузере .
 ### `npm run build`
-
 Сборка приложения в папку `build`.<br>
+## 
+Этот проект был запущен с [Create React App](https://github.com/facebook/create-react-app).
